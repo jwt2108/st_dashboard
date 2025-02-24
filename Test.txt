@@ -1,0 +1,75 @@
+mport pandas as pd
+
+df = pd.DataFrame({'DOB': {0: '26/1/2016 ', 1: '26/1/2016 '})
+print(df.dtypes)
+
+df['DOB1'] = df['DOB'].dt.strftime('%m/%d/%Y')
+print(df.dtypes)
+
+df['DOB1'] = pd.to_datetime(df['DOB1'])
+print(df.dtypes)
+
+
+df['DOB']=pd.to_datetime(df['DOB'].astype(str), format='%m/%d/%Y')
+
+
+df = df.reindex(columns=['mean',0,1,2,3,4])
+
+plot = px.pie(data_frame=df,
+              values='tip',
+              names='sex',
+              title='Tips by Gender',
+              hole=0.3,
+              facet_col='smoker'
+              )
+plot.show()
+
+
+col1, col2, col3 = st.columns(3, gap='medium')
+col1.text('Average GDP')
+col1.subheader(df_plot['gdp'].mean().round(2))
+col2.text('Average Life Expectancy')
+col2.subheader(df_plot['life_exp'].mean().round(2))
+col3.text('Average HDI')
+col3.subheader(df_plot['hdi_index'].mean().round(2))
+
+
+
+title = 'Plot of Life Expectancy v GDP for year {}'.format(dropdown)
+
+scatter_plot = px.scatter(data_frame=df_plot,
+                          x='gdp',
+                          y='life_exp',
+                          color='continent',
+                          title=title)
+st.plotly_chart(scatter_plot)
+
+import streamlit as st
+
+html_string = "<h3>this is an html string</h3>"
+
+st.markdown(html_string, unsafe_allow_html=True)
+
+
+
+st.subheader('Bull Analysis Selection')
+
+dropdown_1 = st.selectbox(label='Select NWSS Bull Division',
+                          key='dd1',
+                          options=div_list,
+                          help='Select Bull Division for Analysis')
+df_plot = df[df['Class'] == dropdown_1]
+df_plot = df_plot.reset_index(drop=True)
+df_plot.index += 1
+
+
+
+st.subheader('Bull Scatterplot by Bull Score for {}'.format(dropdown_1)
+
+
+git init
+git add --all
+git commit -m "first commit"
+git branch -M main
+git remote add origin https://<Link to your github repo>
+git push -u origin main
