@@ -36,7 +36,7 @@ notes1 = "<h4>Data</h4><ul> " \
 notes2 = "<h4>Bulls Sorted into Age Groups based on NWSS Division Ages</h4><ul><li>A quick observation of the data in " \
          "the spreadsheets quickly reveals that comparing bulls across ages makes no sense. </li><li>For this analysis, " \
          "bulls were sorted by NWSS Division. In order to do this, the age in " \
-         "days was obtained (Days_Old) based on the difference in days between the NWSS measurement date for each " \
+         "days (Days_Old) was obtained based on the difference in days between the NWSS measurement date for each " \
          "year's show and the Date of Birth (DOB).</li>" \
          "<li>A 50 pound constant was subtracted from the Measurement Weight since birth weights are not reported. " \
          "This impacted ADG, which was calculated by dividing the reported NWSS weight measurement by the newly " \
@@ -90,7 +90,7 @@ with col_c:
     st.plotly_chart(box_plot)
 
 #  Dropdown 1
-st.subheader('Bull Analysis Selection')
+st.subheader('AHCA NWSS Bull Division Selection')
 
 dropdown_1 = st.selectbox(label='Select NWSS Bull Division',
                           key='dd1',
@@ -134,14 +134,9 @@ st.subheader('Bull Scatterplot for {}'.format(dropdown_1), help='Bull Scores: '
                                                             'REA, REA per 100, & %IMF). Since Bull '
                                                             'Scores are calculated based on '
                                                             'Division, the scores are'
-                                                            'only relevant to that class. '
-                                                            'The bull score is ascending from left '
-                                                            'to right in'
-                                                            'the graphs below. The y axis is the '
-                                                            'category from the'
-                                                            'NWSS metrics (e.g. REA v bull_score)')
+                                                            'only relevant to that class. ')
 
-cat_choices = ['Weight', 'REA', 'ADG', 'REA_per_100', '%IMF', 'Days_Old', 'Backfat', 'Scrotal']
+cat_choices = ['bull_score','Weight', 'REA', 'ADG', 'REA_per_100', '%IMF', 'Days_Old', 'Backfat', 'Scrotal']
 
 col_pd1, col_pd2 = st.columns(2, gap='small')
 
