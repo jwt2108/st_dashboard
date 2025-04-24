@@ -83,6 +83,8 @@ with tab1:
               "improve the USDA Quality Grade (which measures marbling and tenderness) and Yield Grade (which measures the " \
               "amount of usable meat on the carcass). A larger REA tends to lower the Yield Grade, indicating a higher yield of " \
               "lean meat from the carcass.</li>"
+
+
     imf_info = "IMF (Intramuscular Fat) Percentage in cattle refers to the amount of fat that is deposited within the muscle tissue, " \
                "specifically within the muscle fibers themselves. This fat is commonly known as marbling, and it plays a " \
                "crucial role in determining the quality of beef, including tenderness, flavor, and juiciness."
@@ -111,36 +113,36 @@ with tab1:
                   "sufficient IMF, beef can become dry, particularly when cooked at higher temperatures."
 
     imf_column2 = "<h3>2. Grading and Market Value:</h3>" \
-                  "USDA Grading: The USDA Beef Quality Grades, such as Prime, Choice, and Select, are based partly on the amount of " \
+                  "<li>USDA Grading: The USDA Beef Quality Grades, such as Prime, Choice, and Select, are based partly on the amount of " \
                   "IMF present in the muscle. Beef with higher levels of IMF (such as Prime) is generally considered of higher quality and " \
                   "can command a higher price on the market. Prime beef typically has an IMF percentage of around 8-12%, while " \
-                  "Choice is generally around 4-7%, and Select is lower than that." \
-                  "Consumer Preference: High marbling is often a mark of higher consumer satisfaction, especially in premium " \
+                  "Choice is generally around 4-7%, and Select is lower than that.</li>" \
+                  "<li>Consumer Preference: High marbling is often a mark of higher consumer satisfaction, especially in premium " \
                   "cuts like steaks (ribeye, strip loin, etc.). Beef with higher IMF is typically preferred in restaurants and by " \
-                  "consumers who are looking for a premium eating experience."
+                  "consumers who are looking for a premium eating experience.</li>"
     imf_column3 = "<h3>3. Breeding and Selection:</h3>" \
-                  "Genetics: IMF percentage is often used in genetic selection. Cattle with higher marbling are selectively " \
+                  "<li>Genetics: IMF percentage is often used in genetic selection. Cattle with higher marbling are selectively " \
                   "bred to pass on the trait to offspring, which is particularly important for premium beef production. Advances in " \
-                  "genomic testing now allow producers to select animals with higher genetic potential for marbling." \
+                  "genomic testing now allow producers to select animals with higher genetic potential for marbling.</li>" \
                   "<h3>4. Market Differentiation:</h3>" \
                     "Beef with higher IMF is often marketed as premium beef (e.g., Wagyu, Angus, and other high-marbling breeds) and " \
                     "may be sold at a premium price. In some markets, beef with specific IMF thresholds may be part of certified beef programs " \
                     "or other value-added marketing initiatives."
 
     adg_c1 = "<h3>1. Efficiency of Production:</h3>" \
-             "Growth Monitoring: ADG provides a clear picture of how quickly cattle are growing, " \
+             "<li>Growth Monitoring: ADG provides a clear picture of how quickly cattle are growing, " \
              "which is crucial for producers aiming to maximize production efficiency. Faster-growing cattle generally result in " \
-             "quicker time-to-market, leading to more efficient operations." \
-             "Feed Efficiency: A higher ADG generally correlates with better feed conversion — meaning the animal is converting feed " \
-             "into weight gain more efficiently. This is important because feed costs typically represent a significant portion of total production costs." \
+             "quicker time-to-market, leading to more efficient operations.</li>" \
+             "<li>Feed Efficiency: A higher ADG generally correlates with better feed conversion — meaning the animal is converting feed " \
+             "into weight gain more efficiently. This is important because feed costs typically represent a significant portion of total production costs.</li>" \
              "<h3>2.Profitability:</h3>" \
-             "Cost vs. Gain: If cattle are growing too slowly, the producer might need to feed them longer, increasing feed costs and" \
+             "<li>Cost vs. Gain: If cattle are growing too slowly, the producer might need to feed them longer, increasing feed costs and" \
              " extending the time before the animal is ready for market. Conversely, rapid growth (high ADG) allows cattle to reach market " \
-             "weight sooner, improving the producer's turnover and profitability" \
-             "Market Timing: For cattle that are being raised for beef, especially in high-quality or premium markets, " \
+             "weight sooner, improving the producer's turnover and profitability</li>" \
+             "<li>Market Timing: For cattle that are being raised for beef, especially in high-quality or premium markets, " \
              "reaching a certain weight quickly can help meet specific market requirements, such as carcass weight or fat content." \
              "Health Indicators: Consistent, healthy weight gain often indicates that the cattle are in good health, receiving proper " \
-             "nutrition, and not suffering from diseases or stress that could stunt growth."
+             "nutrition, and not suffering from diseases or stress that could stunt growth.</li>"
 
     adg_c2 = "<h3>3. Breeding Selection</h3>" \
              "Breeders use ADG to evaluate genetics. Cattle with superior ADG can pass on desirable traits like " \
@@ -156,32 +158,32 @@ with tab1:
              "selling point to buyers looking for productivity and efficiency."
 
     adg_3 = "<h3>1. Genetics</h3>" \
-            "Breed: Different breeds have varying growth potentials. For instance, Continental breeds like Charolais " \
-            "often exhibit higher ADG compared to British breeds like Angus." \
-            "<br>Lineage/Parentage: Animals from sires and dams with superior growth traits tend to have better ADG." \
-            "<br>Selection for Traits: Selecting cattle with high Expected Progeny Differences (EPD) for growth can significantly improve ADG."\
+            "<li>Breed: Different breeds have varying growth potentials. For instance, Continental breeds like Charolais " \
+            "often exhibit higher ADG compared to British breeds like Angus.</li>" \
+            "<li>Lineage/Parentage: Animals from sires and dams with superior growth traits tend to have better ADG.</li>" \
+            "<li>Selection for Traits: Selecting cattle with high Expected Progeny Differences (EPD) for growth can significantly improve ADG.</li>"\
             ""\
             "<h3>2. Nutrition</h3>" \
-            "Energy Intake: Diets with adequate energy (calories) are critical for weight gain. High-energy grains or " \
-            "well-balanced forages improve ADG." \
-            "<br>Protein Levels: Sufficient protein is essential for muscle growth and overall development." \
-            "<br>Feed Quality: High-quality forages and feedstuffs result in better feed efficiency and ADG." \
-            "<br>Minerals and Vitamins: Proper supplementation of minerals (e.g., calcium, phosphorus) and vitamins (e.g., A, D, E) " \
-            "ensures optimal growth and health." \
-            "<br>Feed Additives: Additives like ionophores (e.g., monensin) can enhance feed efficiency and ADG."\
+            "<li>Energy Intake: Diets with adequate energy (calories) are critical for weight gain. High-energy grains or " \
+            "well-balanced forages improve ADG.</li>" \
+            "<li>Protein Levels: Sufficient protein is essential for muscle growth and overall development.</li>" \
+            "<li>Feed Quality: High-quality forages and feedstuffs result in better feed efficiency and ADG.</li>" \
+            "<li>Minerals and Vitamins: Proper supplementation of minerals (e.g., calcium, phosphorus) and vitamins (e.g., A, D, E) " \
+            "ensures optimal growth and health.</li>" \
+            "<li>Feed Additives: Additives like ionophores (e.g., monensin) can enhance feed efficiency and ADG.</li>"\
             "<h3>3. Management</h3>" \
-            "Weaning Practices: Stress-free weaning and proper post-weaning nutrition boost growth rates." \
-            "<br>Health Protocols: Vaccinations and parasite control prevent diseases that can reduce ADG. " \
-            "<br>Stocking Density: Overcrowding can reduce feed access and increase stress, negatively impacting ADG." \
-            "<br>Castration and Implants: Timing of castration and use of growth-promoting implants can influence growth rates." \
+            "<li>Weaning Practices: Stress-free weaning and proper post-weaning nutrition boost growth rates.</li>" \
+            "<li>Health Protocols: Vaccinations and parasite control prevent diseases that can reduce ADG. " \
+            "<br>Stocking Density: Overcrowding can reduce feed access and increase stress, negatively impacting ADG.</li>" \
+            "<li>Castration and Implants: Timing of castration and use of growth-promoting implants can influence growth rates.</li>" \
             "<h3>4. Environment</h3>" \
-            "Temperature: Extreme cold or heat can reduce feed intake and energy available for growth." \
-            "<br>Housing and Shelter: Comfortable, clean housing minimizes stress and supports optimal growth." \
-            "<br>Pasture Quality: Good pasture management ensures consistent access to nutritious forage."
+            "<li>Temperature: Extreme cold or heat can reduce feed intake and energy available for growth.</li>" \
+            "<li>Housing and Shelter: Comfortable, clean housing minimizes stress and supports optimal growth.</li>" \
+            "<li>Pasture Quality: Good pasture management ensures consistent access to nutritious forage.</li>"
 
     adg_4 = "<h3>5. Behavior and Social Dynamic</h3>" \
-            "Feed Access: Dominant animals may outcompete others for feed, affecting the ADG of less aggressive individuals." \
-            "<br>Stress Levels: Low-stress handling practices improve cattle performance" \
+            "<li>Feed Access: Dominant animals may outcompete others for feed, affecting the ADG of less aggressive individuals.</li>" \
+            "<li>Stress Levels: Low-stress handling practices improve cattle performance</li>" \
             "<h3>6. Age and Stage of Growth</h3>" \
             "Younger cattle generally have a higher potential for ADG compared to mature animals, as they are in a more active growth phase." \
             "<h3>7. Feed Conversion Efficiency (FCE)</h3>" \
