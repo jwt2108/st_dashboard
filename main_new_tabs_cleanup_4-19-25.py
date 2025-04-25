@@ -64,12 +64,12 @@ with tab1:
     notes_REA = "<i>REA (Ribeye Area) in cattle refers to the size of the muscle cross-section from the ribeye steak " \
                 "(located between the 12th and 13th ribs). <br>It is a key measurement used in cattle grading and " \
                 "evaluation, especially when assessing the quality and yield of meat.</i>"
-    REA_how = "Location: The REA is measured between the 12th and 13th ribs, as this area provides a representative " \
-              "sample of the overall muscle development and fat coverage in the animal.<br><br>" \
-              "Measurement Method: The measurement is typically taken using an ultrasound or a ribeye scanner.<br><br> " \
+    REA_how = "<li>Location: The REA is measured between the 12th and 13th ribs, as this area provides a representative " \
+              "sample of the overall muscle development and fat coverage in the animal.</li>" \
+              "<li>Measurement Method: The measurement is typically taken using an ultrasound or a ribeye scanner. " \
               "A scan is done on the carcass, and the area is calculated as the total surface area of the ribeye " \
               "muscle in square inches or square centimeters. It can also be estimated by visual assessment in live " \
-              "cattle, although ultrasound technology is more accurate."
+              "cattle, although ultrasound technology is more accurate.</li>"
     REA_why = "<li>Meat Yield: The size of the ribeye muscle directly correlates with the amount of muscle and " \
               "therefore the potential yield of meat. A larger REA indicates a larger muscle mass, which often results in higher meat yield and " \
               "higher-quality cuts from the ribeye.</li><br>" \
@@ -176,12 +176,13 @@ with tab1:
             "<li>Health Protocols: Vaccinations and parasite control prevent diseases that can reduce ADG. " \
             "<br>Stocking Density: Overcrowding can reduce feed access and increase stress, negatively impacting ADG.</li>" \
             "<li>Castration and Implants: Timing of castration and use of growth-promoting implants can influence growth rates.</li>" \
-            "<h3>4. Environment</h3>" \
+
+
+    adg_4 = "<h3>4. Environment</h3>" \
             "<li>Temperature: Extreme cold or heat can reduce feed intake and energy available for growth.</li>" \
             "<li>Housing and Shelter: Comfortable, clean housing minimizes stress and supports optimal growth.</li>" \
-            "<li>Pasture Quality: Good pasture management ensures consistent access to nutritious forage.</li>"
-
-    adg_4 = "<h3>5. Behavior and Social Dynamic</h3>" \
+            "<li>Pasture Quality: Good pasture management ensures consistent access to nutritious forage.</li>"\
+        "<h3>5. Behavior and Social Dynamic</h3>" \
             "<li>Feed Access: Dominant animals may outcompete others for feed, affecting the ADG of less aggressive individuals.</li>" \
             "<li>Stress Levels: Low-stress handling practices improve cattle performance</li>" \
             "<h3>6. Age and Stage of Growth</h3>" \
@@ -259,14 +260,13 @@ with tab1:
             st.markdown(adg_c1, unsafe_allow_html=True)
         with adg2:
             st.markdown(adg_c2,unsafe_allow_html=True)
-
+    st.divider()
     c3 = st.container()
     with c3:
         st.markdown("<h3 style='text-align: center; color: CornflowerBlue;'>Influences on ADG</h3>",
                     unsafe_allow_html=True)
         adg3, adg4 = st.columns(2, gap='large')
         with adg3:
-
             st.markdown(adg_3,unsafe_allow_html=True)
         with adg4:
             st.markdown(adg_4, unsafe_allow_html=True)
