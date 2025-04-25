@@ -174,7 +174,7 @@ with tab1:
             "<h3>3. Management</h3>" \
             "<li>Weaning Practices: Stress-free weaning and proper post-weaning nutrition boost growth rates.</li>" \
             "<li>Health Protocols: Vaccinations and parasite control prevent diseases that can reduce ADG. " \
-            "<br>Stocking Density: Overcrowding can reduce feed access and increase stress, negatively impacting ADG.</li>" \
+            "<li>Stocking Density: Overcrowding can reduce feed access and increase stress, negatively impacting ADG.</li>" \
             "<li>Castration and Implants: Timing of castration and use of growth-promoting implants can influence growth rates.</li>" \
 
 
