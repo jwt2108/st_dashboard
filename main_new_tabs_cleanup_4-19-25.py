@@ -30,10 +30,11 @@ st.markdown('National Western Stock Show(NWSS) - American Highland Cattle Associ
 
 # Set up tabs
 
-tab1, tab2, tab3, tab4 = st.tabs(['NWSS Highland Bull Background Information    ',
-                                  'NWSS Highland Bull Trends by Division     ',
-                                  'NWSS Bull Division Analysis       ',
-                                  'NWSS Selected Bull Analysis'])
+tab1, tab2, tab3, tab4, tab5 = st.tabs(['NWSS Highland Bull Background Information    ',
+                                        'NWSS Highland Bull Trends by Division     ',
+                                        'NWSS Bull Division Analysis       ',
+                                        'NWSS Selected Bull Analysis',
+                                        'How old is my Bull?'])
 
 with tab1:
     # st.subheader("Background Information")
@@ -271,6 +272,23 @@ with tab1:
         with adg4:
             st.markdown(adg_4, unsafe_allow_html=True)
 
+with tab5:
+    st.header('Calculate Bull Age in Days')
+    age1, age2, age3 = st.columns(3)
+    with age1:
+        age_entry = st.date_input(label='Date of Birth',
+                                  help='Enter DOB (YYYY/MM/DD)',
+                                  format="YYYY/MM/DD"
+                                  )
+    with age2:
+        date = st.date_input(label='Calculation Date',
+                             help='Use current date or desired calculation date (e.g. Show Date, Measurement Date, etc',
+                             format="YYYY/MM/DD",)
+
+    with age3:
+        age_in_days = date - age_entry
+        age_in_days = age_in_days.days
+        st.markdown(f"<h1 style='text-align: center; color: CornflowerBlue;'>Age in Days = {age_in_days}</h1>", unsafe_allow_html=True)
 
 
 
