@@ -822,7 +822,7 @@ with tab5:
 with tab6:
     st.title('Feed Conversion Calculator')
     st.markdown(f"<h5 style='color:CornflowerBlue;'>Calculations below assume 'feed' is grain, cake or other feed "
-                f"supplement and does not account for ration of free choice grass or hay"
+                f"supplement and does not account for ration of free choice grass, hay or even water."
                 f"</h5>",
                 unsafe_allow_html=True)
     bull_name = st.text_input(label='Bull Name',
@@ -873,81 +873,60 @@ with tab6:
                 fce = (daily_ration / adg).__round__(2)
                 # st.write('Feed Conversion Efficiency: {}'.format(fce))
 
-                row1_c1, row1_c2, row1_c3 = st.columns(3, gap='medium')
+                row1_c1, row1_c2, row1_c3 = st.columns(3, gap='small')
 
                 with row1_c1:
-                    container_css = """
-                                                                       .st-key-my_blue_container {
-                                                                       background-color: rgb(231, 133, 214, 0.3);
-                                                                       margin: 10%;
-                                                                       width:80%;
-                                                                       border-radius: 30px;
-                                                                       text-indent: 30px;
-                                                                       padding-bottom: 30px;
-                                                                       }
-                                                                       """
+                    container_css = """.st-key-my_blue_container {background-color: rgb(231, 133, 214, 0.3);  
+                    border-radius: 30px; text-indent: 30px; padding-bottom: 30px; }"""
+
                     st.html(f"<style>{container_css}</style>")
                     c1 = st.container(key="my_blue_container")
 
                     with c1:
                         st.subheader('Evaluation Period', help='Start Date / End Date / Number of Days')
-                        st.markdown(f"<h5 style='color:CornflowerBlue;'>Start Date: {start_wt_entry}</h5>",
+                        st.markdown(f"<p style='color:CornflowerBlue;'>Start Date: {start_wt_entry}</p>",
                                     unsafe_allow_html=True)
-                        st.markdown(f"<h5 style='color:CornflowerBlue;'>Stop Date: {stop_wt_entry}</h5>",
+                        st.markdown(f"<p style='color:CornflowerBlue;'>Stop Date: {stop_wt_entry}</p>",
                                     unsafe_allow_html=True)
                         st.markdown(
-                            f"<h5 style='color:CornflowerBlue;'>Number of Days Calculated: {number_of_days} Days</h5>",
+                            f"<p style='color:CornflowerBlue;'>Number of Days Calculated: {number_of_days} Days</p>",
                             unsafe_allow_html=True)
 
                 with row1_c2:
-                    container_css = """
-                                                                                           .st-key-my_blue_container2 {
-                                                                                           background-color: rgb(231, 133, 214, 0.3);
-                                                                                           margin: 10%;
-                                                                                           width:60%;
-                                                                                           border-radius: 30px;
-                                                                                           text-indent: 30px;
-                                                                                           padding-bottom: 30px;
-                                                                                           }
-                                                                                           """
+                    container_css = """.st-key-my_blue_container2 { background-color: rgb(231, 133, 214, 
+                    0.3); border-radius: 30px; text-indent: 30px; padding-bottom: 30px; }"""
                     st.html(f"<style>{container_css}</style>")
+
                     c2 = st.container(key="my_blue_container2")
                     with c2:
                         st.subheader('Weight Data')
-                        st.markdown(f"<h5 style='color:CornflowerBlue;'>Start Weight: {start_weight} lb.",
+                        st.markdown(f"<p style='color:CornflowerBlue;'>Start Weight: {start_weight} lb.</p>",
                                     unsafe_allow_html=True)
-                        st.markdown(f"<h5 style='color:CornflowerBlue;'>Stop Weight: {stop_weight} lb.",
+                        st.markdown(f"<p style='color:CornflowerBlue;'>Stop Weight: {stop_weight} lb.</p>",
                                     unsafe_allow_html=True)
-                        st.markdown(f"<h5 style='color:CornflowerBlue;'>Weight Gain/Loss: {fcc_gain} lb.",
+                        st.markdown(f"<p style='color:CornflowerBlue;'>Weight Gain/Loss: {fcc_gain} lb.</p>",
                                     unsafe_allow_html=True)
-                        st.markdown(f"<h5 style='color:CornflowerBlue;'>ADG: {adg} lb.", unsafe_allow_html=True)
+                        st.markdown(f"<p style='color:CornflowerBlue;'>ADG: {adg} lb.</p>", unsafe_allow_html=True)
 
                 with row1_c3:
-                    container_css = """
-                                                                                                               .st-key-my_blue_container3 {
-                                                                                                               background-color: rgb(231, 133, 214, 0.3);
-                                                                                                               margin: 10%;
-                                                                                                               width:80%;
-                                                                                                               border-radius: 30px;
-                                                                                                               text-indent: 30px;
-                                                                                                               padding-bottom: 30px;
-                                                                                                               }
-                                                                                                               """
+                    container_css = """.st-key-my_blue_container3 { background-color: rgb(231, 133, 214, 
+                    0.3); border-radius: 30px; text-indent: 30px; 
+                    padding-bottom: 30px; }"""
                     st.html(f"<style>{container_css}</style>")
                     c3 = st.container(key="my_blue_container3")
                     with c3:
                         st.subheader('Feed Conversion Data')
-                        st.markdown(f"<h5 style='color:CornflowerBlue;'>Total Ration Consumed: {total_ration} lb.",
+                        st.markdown(f"<p style='color:CornflowerBlue;'>Total Ration Consumed: {total_ration} lb.",
                                     unsafe_allow_html=True,
-                                    help='Total Ration: Daily Ration * Number of Days in Evaluation Period')
-                        st.markdown(f"<h5 style='color:CornflowerBlue;'>Daily Ration: {daily_ration} lb.",
+                                    help='Total Ration: Daily Ration * Number of Days in Evaluation Period</p>')
+                        st.markdown(f"<p style='color:CornflowerBlue;'>Daily Ration: {daily_ration} lb.",
                                     unsafe_allow_html=True,
-                                    help='Daily Ration: Daily Ration in lb. entered above')
-                        st.markdown(f"<h5 style='color:CornflowerBlue;'>Feed Conversion Ratio: {fcr}",
+                                    help='Daily Ration: Daily Ration in lb. entered above</p>')
+                        st.markdown(f"<p style='color:CornflowerBlue;'>Feed Conversion Ratio: {fcr}",
                                     unsafe_allow_html=True,
-                                    help='Feed Conversion Ratio: Total Rations / Total Weight Gain')
-                        st.markdown(f"<h5 style='color:CornflowerBlue;'>Feed Conversion Efficiency: {fce}",
-                                    unsafe_allow_html=True, help='Feed Conversion Efficiency: Daily Ration / ADG')
+                                    help='Feed Conversion Ratio: Total Rations / Total Weight Gain</p>')
+                        st.markdown(f"<p style='color:CornflowerBlue;'>Feed Conversion Efficiency: {fce}",
+                                    unsafe_allow_html=True, help='Feed Conversion Efficiency: Daily Ration / ADG</p>')
 
                     csv_df = pd.DataFrame({'Name: ': bull_name,
                                            'Start_Date:': start_wt_entry,
@@ -962,14 +941,12 @@ with tab6:
                                            'Feed Conversion Ratio:': fcr,
                                            'Feed Conversion Efficiency:': fce
                                            }, index=[0])
-                    print(csv_df)
-                    # output_report = False
-                    # o_r = st.button(label='Output Report (.csv)')
-                    if st.button('Download CSV'):
-                        # output_report = True
-                        o_r = csv_df.to_csv(index=False)
-                        st.download_button(label='Download CSV', data=o_r,
-                                           file_name='{} Feed Conversion Report.csv'.format(bull_name), mime='text/csv')
+
+                # if st.button('Download CSV'):
+                o_r = csv_df.to_csv(index=False)
+                st.download_button(label='Download CSV', data=o_r,file_name='{} Feed Conversion Report.csv'.format(bull_name), mime='text/csv')
+
+
 
 # import streamlit as st
 # import pandas as pd
