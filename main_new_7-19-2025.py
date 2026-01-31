@@ -918,15 +918,19 @@ with tab6:
                         st.subheader('Feed Conversion Data')
                         st.markdown(f"<p style='color:CornflowerBlue;'>Total Ration Consumed: {total_ration} lb.",
                                     unsafe_allow_html=True,
-                                    help='Total Ration: Daily Ration * Number of Days in Evaluation Period</p>')
+                                    # help='Total Ration: Daily Ration * Number of Days in Evaluation Period</p>'
+                                   )
                         st.markdown(f"<p style='color:CornflowerBlue;'>Daily Ration: {daily_ration} lb.",
                                     unsafe_allow_html=True,
-                                    help='Daily Ration: Daily Ration in lb. entered above</p>')
+                                    # help='Daily Ration: Daily Ration in lb. entered above</p>'
+                                   )
                         st.markdown(f"<p style='color:CornflowerBlue;'>Feed Conversion Ratio: {fcr}",
                                     unsafe_allow_html=True,
-                                    help='Feed Conversion Ratio: Total Rations / Total Weight Gain</p>')
+                                    # help='Feed Conversion Ratio: Total Rations / Total Weight Gain</p>'
+                                   )
                         st.markdown(f"<p style='color:CornflowerBlue;'>Feed Conversion Efficiency: {fce}",
-                                    unsafe_allow_html=True, help='Feed Conversion Efficiency: Daily Ration / ADG</p>')
+                                    unsafe_allow_html=True, help='Feed Conversion Efficiency: Daily Ration / ADG</p>'
+                                   )
 
                     csv_df = pd.DataFrame({'Name: ': bull_name,
                                            'Start_Date:': start_wt_entry,
