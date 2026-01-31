@@ -929,7 +929,8 @@ with tab6:
                                     # help='Feed Conversion Ratio: Total Rations / Total Weight Gain</p>'
                                    )
                         st.markdown(f"<p style='color:CornflowerBlue;'>Feed Conversion Efficiency: {fce}",
-                                    unsafe_allow_html=True, help='Feed Conversion Efficiency: Daily Ration / ADG</p>'
+                                    unsafe_allow_html=True, 
+                                    # help='Feed Conversion Efficiency: Daily Ration / ADG</p>'
                                    )
 
                     csv_df = pd.DataFrame({'Name: ': bull_name,
